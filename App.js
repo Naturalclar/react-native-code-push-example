@@ -7,6 +7,7 @@
  */
 
 import React from 'react';
+import codePush from 'react-native-code-push';
 import type {Node} from 'react';
 import {
   SafeAreaView,
@@ -109,4 +110,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default codePush(App);

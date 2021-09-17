@@ -14,6 +14,7 @@
 		348DEB64BD6E45D7407D48A3 /* libPods-RN066rc3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD260B3D88FD6CE40FF90697 /* libPods-RN066rc3.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		9724CEF1BF8BFC54CEA7355C /* libPods-RN066rc3-RN066rc3Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F18BA45F64A213DFF7639839 /* libPods-RN066rc3-RN066rc3Tests.a */; };
+		C7E0D54226F4883B004A0482 /* AppCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7E0D54126F4883B004A0482 /* AppCenter-Config.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RN066rc3/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DA5DB1B1CC5FB77B5C81F72 /* Pods-RN066rc3-RN066rc3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN066rc3-RN066rc3Tests.release.xcconfig"; path = "Target Support Files/Pods-RN066rc3-RN066rc3Tests/Pods-RN066rc3-RN066rc3Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A9B382F2AC770A6CD8DFD5B6 /* Pods-RN066rc3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN066rc3.release.xcconfig"; path = "Target Support Files/Pods-RN066rc3/Pods-RN066rc3.release.xcconfig"; sourceTree = "<group>"; };
+		C7E0D54126F4883B004A0482 /* AppCenter-Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AppCenter-Config.plist"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		EF9C98A00B4BA4CDF1547D32 /* Pods-RN066rc3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN066rc3.debug.xcconfig"; path = "Target Support Files/Pods-RN066rc3/Pods-RN066rc3.debug.xcconfig"; sourceTree = "<group>"; };
 		F18BA45F64A213DFF7639839 /* libPods-RN066rc3-RN066rc3Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN066rc3-RN066rc3Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,7 +116,6 @@
 				52FAB0F2C0A9A3D1314ACD9E /* Pods-RN066rc3-RN066rc3Tests.debug.xcconfig */,
 				8DA5DB1B1CC5FB77B5C81F72 /* Pods-RN066rc3-RN066rc3Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,6 +129,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				C7E0D54126F4883B004A0482 /* AppCenter-Config.plist */,
 				13B07FAE1A68108700A75B9A /* RN066rc3 */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RN066rc3Tests */,
@@ -245,6 +247,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				C7E0D54226F4883B004A0482 /* AppCenter-Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,7 +564,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -627,7 +630,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
